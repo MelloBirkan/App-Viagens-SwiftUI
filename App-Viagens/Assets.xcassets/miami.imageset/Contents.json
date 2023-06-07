@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Mello_A_vibrant_Miami_cityscape_at_sunset_with_towering_skyscra_b6b80876-f5be-4957-a20f-a85964d478bd.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

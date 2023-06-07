@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Mello_A_picturesque_canal_in_Venice_with_gondolas_gliding_throu_32ba6e1a-6379-4c65-815b-2fccdc94c8c9.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

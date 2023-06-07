@@ -20,37 +20,61 @@ struct ContentView: View {
                 
                 VStack{
                     Text("Mello Viagens")
-                        .foregroundColor(.white)
                         .font(.custom("Avenir Black", size: 25))
-                        .padding(.top, 30)
-                    
+                        .padding(.top, 50)
                     
                     Text("Especial".uppercased())
-                        .foregroundColor(.white)
                         .font(.custom("Avenir Book", size: 18))
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 30)
                     
                     Text("Mundo".uppercased())
                         .font(.custom("Avenir Black", size: 20))
-                        .foregroundColor(.white)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 30)
                 }
-                .frame(width: View.size.width, height: 180, alignment: .top)
+                .foregroundColor(.white)
+                .frame(width: View.size.width, height:180, alignment: .top)
                 .background(Color.teal)
+                
+                HStack {
+                    Button(action: {}) {
+                            Text("Hotéis")
+                                .font(.custom("Avenir Medium", size: 20))
+                                .frame(width: 100, height: 50)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(Color(red: 232/255, green: 35/255, blue: 161/255))
+                                )
+                        }
+                        .offset(x: 50)
+                    
+                    Spacer()
+                    
+                    Button(action: {}) {
+                        Text("Pacotes")
+                            .font(.custom("Avenir Medium", size: 20))
+                            .frame(width: 100, height: 50)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .foregroundColor(Color(red: 232/255, green: 204/255, blue: 35/255))
+                            )
+                    }
+                    .offset(x: -50)
+                }
+                .offset(y: -25)
+                .foregroundColor(.white)
                 
                     List {
                         Text("Miami")
                         Text("Paris")
                         Text("Veneza")
                         Text("Berlin")
-                        Text("Amsterdam")
                         Text("Nova York")
                     }
             }
-            
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

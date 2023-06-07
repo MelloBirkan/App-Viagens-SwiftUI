@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Mello_The_iconic_Brandenburg_Gate_in_Berlin_standing_as_a_symbo_69b88acf-c5e7-4aae-a511-fcbd2b9d0353.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

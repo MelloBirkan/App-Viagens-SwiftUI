@@ -1,3 +1,10 @@
+//
+//  Dados.swift
+//  App-Viagens
+//
+//  Created by Marcello Gonzatto Birka/Users/marcellogonzattobirkan/Downloads/Resourcesn on 07/06/23.
+//
+
 import Foundation
 
 let viagens: [Viagem] = load("viagens.json")

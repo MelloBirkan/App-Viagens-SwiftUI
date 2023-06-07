@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct ContentView: View {
+
+    
     var body: some View {
         
         GeometryReader { View in
@@ -65,13 +68,11 @@ struct ContentView: View {
                 .offset(y: -25)
                 .foregroundColor(.white)
                 
-                    List {
-                        Text("Miami")
-                        Text("Paris")
-                        Text("Veneza")
-                        Text("Berlin")
-                        Text("Nova York")
+                    List(viagens) { viagem in
+                        Text(viagem.titulo)
+                        
                     }
+                    .scrollContentBackground(.hidden)
             }
         }
         .edgesIgnoringSafeArea(.all)

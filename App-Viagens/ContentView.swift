@@ -69,10 +69,22 @@ struct ContentView: View {
                 .foregroundColor(.white)
                 
                     List(viagens) { viagem in
-                        Text(viagem.titulo)
-                        
+                        VStack(alignment: .leading) {
+                            Text(viagem.titulo)
+                            Image(viagem.imagem)
+                                .resizable()
+                                .scaledToFit()
+                                .cornerRadius(10)
+                            
+                            HStack{
+                                Text(viagem.quantidadeDeDias)
+                                Spacer()
+                                Text(viagem.valor)
+                            }
+                        }
                     }
-                    .scrollContentBackground(.hidden)
+                    //.scrollContentBackground(.hidden)
+
             }
         }
         .edgesIgnoringSafeArea(.all)

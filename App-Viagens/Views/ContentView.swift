@@ -9,24 +9,29 @@ import SwiftUI
 import Foundation
 
 struct ContentView: View {
-    
-    
     var body: some View {
         
-        GeometryReader { View in
-            
-            VStack {
-                HeaderView()
-                    .frame(width: View.size.width, height: 205, alignment: .center)
-                List(viagens) { viagem in
-                    CelulaViagemView(viagem: viagem)
-                }
-                .listStyle(PlainListStyle())
-                //.scrollContentBackground(.hidden)
+        NavigationView {
+            GeometryReader { View in
                 
+                VStack {
+                    
+                    HeaderView()
+                        .frame(width: View.size.width, height: 205, alignment: .center)
+                    
+                    List(viagens) { viagem in
+                        NavigationLink(
+                            destination: MapaView(cordenada: viagem.localizacao)
+                            .navigationBarTitle("Localização")
+                        ) {
+                            CelulaViagemView(viagem: viagem)
+                        }.navigationTitle("")
+                    }
+                    .listStyle(PlainListStyle())
+                }
             }
-        }
-        .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.all)
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

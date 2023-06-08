@@ -6,8 +6,8 @@
         "quantidadeDeDias": "6 dias",
         "valor": "1.200,00",
         "coordenada": {
-            "longitude": -43.2096,
-            "latitude": -22.9035
+            "longitude": -80.1918,
+            "latitude": 25.7617
         }
     },
     {
@@ -17,8 +17,8 @@
         "quantidadeDeDias": "6 dias",
         "valor": "1.200,00",
         "coordenada": {
-            "longitude": -38.5434,
-            "latitude": -3.71839
+            "longitude": 2.3522,
+            "latitude": 48.8566
         }
     },
     {
@@ -28,8 +28,8 @@
         "quantidadeDeDias": "6 dias",
         "valor": "1.200,00",
         "coordenada": {
-            "longitude": -46.5502,
-            "latitude": -23.1171
+            "longitude": 12.3155,
+            "latitude": 45.4408
         }
     },
     {
@@ -39,8 +39,8 @@
         "quantidadeDeDias": "6 dias",
         "valor": "1.200,00",
         "coordenada": {
-            "longitude": -46.5502,
-            "latitude": -23.1171
+            "longitude": -74.0060,
+            "latitude": 40.7128
         }
     },
     {
@@ -50,8 +50,8 @@
         "quantidadeDeDias": "6 dias",
         "valor": "1.200,00",
         "coordenada": {
-            "longitude": -34.861,
-            "latitude": -7.11532
+            "longitude": 13.4050,
+            "latitude": 52.5200
         }
     }
 ]

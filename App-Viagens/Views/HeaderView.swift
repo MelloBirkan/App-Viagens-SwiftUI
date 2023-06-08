@@ -1,26 +1,18 @@
 //
-//  ContentView.swift
+//  HeaderView.swift
 //  App-Viagens
 //
 //  Created by Marcello Gonzatto Birkan on 07/06/23.
 //
 
 import SwiftUI
-import Foundation
 
-struct ContentView: View {
-
-    
+struct HeaderView: View {
     var body: some View {
         
         GeometryReader { View in
-            
-            // MARK: - VStack Principal
-            
-            VStack {
-                
-                // MARK: - VStack Header
-                
+            // MARK: - VStack Header
+            VStack{
                 VStack{
                     Text("Mello Viagens")
                         .font(.custom("Avenir Black", size: 25))
@@ -42,15 +34,15 @@ struct ContentView: View {
                 
                 HStack {
                     Button(action: {}) {
-                            Text("Hotéis")
-                                .font(.custom("Avenir Medium", size: 20))
-                                .frame(width: 100, height: 50)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 10)
+                        Text("Hotéis")
+                            .font(.custom("Avenir Medium", size: 20))
+                            .frame(width: 100, height: 50)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
                                     .foregroundColor(Color(red: 232/255, green: 35/255, blue: 161/255))
-                                )
-                        }
-                        .offset(x: 50)
+                            )
+                    }
+                    .offset(x: 50)
                     
                     Spacer()
                     
@@ -67,32 +59,13 @@ struct ContentView: View {
                 }
                 .offset(y: -25)
                 .foregroundColor(.white)
-                
-                    List(viagens) { viagem in
-                        VStack(alignment: .leading) {
-                            Text(viagem.titulo)
-                            Image(viagem.imagem)
-                                .resizable()
-                                .scaledToFit()
-                                .cornerRadius(10)
-                            
-                            HStack{
-                                Text(viagem.quantidadeDeDias)
-                                Spacer()
-                                Text(viagem.valor)
-                            }
-                        }
-                    }
-                    //.scrollContentBackground(.hidden)
-
             }
         }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HeaderView()
     }
 }
